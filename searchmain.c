@@ -9,7 +9,7 @@
 int main(int argc, char *argv[])
 {
 	int i;
-	int len;
+	int len, begin, end;
 	int searchterm; //= 0
 	int retval;
 	int a[20] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
@@ -20,10 +20,15 @@ int main(int argc, char *argv[])
 	len = argc - 2;
 	//searchterm = argv[len]
 	searchterm = atoi(argv[len+1]);
+	printf("\nsearchterm is %d\n", searchterm);
 	for(i=0;i<len;i++) {
 		a[i] = atoi(argv[i+1]);
+		printf("%d, ", a[i]);
 	}
-	retval = search(a, len, searchterm);
+	printf("\n");
+	begin = 0;
+	end = len;
+	retval = search(a, begin, end, searchterm);
 	if(retval == -1) {
 		printf("Search not found\n");
 	}

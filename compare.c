@@ -4,10 +4,10 @@
 
 int compare(int a[], int i, int searchterm)
 {
-	if (a[i] == searchterm) {
+	if (searchterm == a[i]) {
 		return 0;
 	}
-	else if (a[i] < searchterm) {
+	else if (searchterm < a[i]) {
 		return -1;
 	}
 	return 1;
