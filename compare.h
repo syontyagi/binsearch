@@ -1,1 +1,1 @@
-int compare(int a[], int i, int );
+int compare(int a[], int i, int searchterm );

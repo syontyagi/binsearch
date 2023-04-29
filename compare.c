@@ -2,10 +2,12 @@
 #include <string.h>
 #include "compare.h"
 
-int compare(int a[], int i, int term)
+int compare(int a[], int i, int searchterm)
 {
-	if(a[i] == term) {
+	if(a[i] == searchterm) {
 		return i;
 	}
-	return -1;
+	else {
+		return -1;
+	}
 }
