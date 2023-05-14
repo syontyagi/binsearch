@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 	len = argc - 2;
 	//searchterm = argv[len]
 	searchterm = atoi(argv[len+1]);
-	printf("\nsearchterm is %d\n", searchterm);
+	printf("\nsearch term is %d\n", searchterm);
 	for(i=0;i<len;i++) {
 		a[i] = atoi(argv[i+1]);
 		printf("%d, ", a[i]);
